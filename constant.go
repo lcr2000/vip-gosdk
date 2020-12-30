@@ -4,7 +4,7 @@ package vip_gosdk
 const (
 	Format  = "JSON"
 	Service = "com.vip.wpc.ospservice.vop.WpcVopOspService"
-	Domain  = "https://gw.emchage.online"
+	Domain  = "https://gw.vipapis.com"
 	Version = "1.0.0"
 )
 
