@@ -9,4 +9,24 @@
  ```
 
 ## 快速开始
+ ```go
+ import (
+ 	"fmt"
+ 	"github.com/lcr2000/vip-gosdk"
+ )
+ 
+ var Client *vip_gosdk.Client
+ 
+ func init()  {
+ 	Client = vip_gosdk.NewClient("appKey", "secret", "userNumber")
+ }
+ 
+ func GetAddress() {
+ 	res, err := Client.SelectAddress("")
+ 	if err != nil {
+ 		fmt.Println(err)
+ 	}
+ 	fmt.Println(res)
+ }
+ ```
 
